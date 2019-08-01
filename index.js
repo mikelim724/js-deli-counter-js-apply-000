@@ -1,7 +1,16 @@
 function takeANumber(currentLine, newperson) {
   currentLine.push(newperson) //add new person into line(array)
   return `Welcome, ${newperson}. You are number ${currentLine.length} in line.`
+} //use template literals
+
+var totalpeople= 12;
+function takeaNumber2(){
+  totalpeople++;
+  console.log( `Welcome, you are ticket number ${totalpeople}.`);
 }
+takeaNumber2();
+takeaNumber2();
+takeaNumber2();
 
 function nowServing(currentLine) {
   if(currentLine.length > 0){
@@ -33,4 +42,10 @@ function currentLine(currentLine) {
   else { //write this if no one is in line
     return "The line is currently empty."
   }
+  // var newlist = [];
+  // for(var i=0; i<currentLine.length; i++){
+  //  newlist.push(`${i+1}. ${currentLine[i]}`)
+  // }
+  // if(currentLine.length===0) {return "The line is currently empty."}
+  // else {return `The line is currently: ${newlist.join(", ")}`}
 }
